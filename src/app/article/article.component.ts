@@ -1,9 +1,11 @@
-﻿import { Article } from './article.model';
-import {
+﻿import {
     Component,
     OnInit,
+    Input,  //<-- added
     HostBinding
 } from '@angular/core';
+
+import { Article } from './article.model'; //<-- added
 
 @Component({
   selector: 'app-article',
