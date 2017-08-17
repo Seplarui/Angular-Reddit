@@ -14,12 +14,13 @@ import { Article } from './article.model'; //<-- added
 })
 export class ArticleComponent implements OnInit {
     @HostBinding('attr.class') cssClass = 'row';
-    article: Article;
- 
+    //article: Article;
+    @Input() article:Article;
+
 
     constructor() {
 
-        this.article = new Article('Angular 2', 'http://angular.io', 10);
+       // this.article = new Article('Angular 2', 'http://angular.io', 10);
 
 
     }
